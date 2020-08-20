@@ -14,4 +14,18 @@ Il y a un client pour chaque service possible dans un bibliothèque c’est-à-d
 Il y a autant de serveurs que de services disponibles dans la bibliothèque. En fonction du port de connexion du client , le serveur va se charger de rediriger le client vers le serveur adapté à son port. Les serveurs dans ce projet tournent en boucle car on considère que tout fonctionne 24h/24. Pour la conception de classe bibliothèque le design pattern Singleton a été utilisé car on considère que les services sont disponibles uniquement dans une seule bibliothèque.
 
 ### Bibliothèque
-Il y a une seule et unique bibliothèque qui est chargé de gérer les emprunts, les réservations et les retours de documents en fonction de son type et les éventuelles erreurs qui peuvent se produire au cours d’un emprunt, d’une réservation ou d’un retour. 
+Il y a une seule et unique bibliothèque qui est chargé de gérer les emprunts, les réservations et les retours de documents en fonction de son type et les éventuelles erreurs qui peuvent se produire au cours d’un emprunt, d’une réservation ou d’un retour.
+
+## Répartition des packages
+
+### Le package bibliotheque
+
+Contient les classes permettant de gérer les abonnés, les documents, les emprunts, les retours, les réservations, ainsi que les exceptions associés à certaines de ces classes.
+
+### Le package client
+
+Contient les classes clientes qui se connectent au serveur afin d'emprunter un document, réserver un document ou bien retourner un document.
+
+### Le package serveur
+
+Contient les classes serveur permettant de gérer les services disponible dans la bibliothèque.
