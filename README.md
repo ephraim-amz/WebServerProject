@@ -29,3 +29,18 @@ Contient les classes clientes qui se connectent au serveur afin d'emprunter un d
 ### Le package serveur
 
 Contient les classes serveur permettant de gérer les services disponible dans la bibliothèque.
+
+# Démonstration du projet
+
+Tout d'abord il faut exécuter la classe AppliServeur qui lance l'ensemble des serveurs.
+
+Ensuite l'utilisateur a le choix entre 3 services : emprunter, réserver ou retourner un document.
+
+## Emprunt d'un document
+![Image console retour document](ImgEmprunt.png)
+## Retour d'un document
+![Image console retour document](ImgRetour.png)
+## Réservation d'un document
+![Image console retour document](ImgReservation.png)
+## Réservation d'un document (Affichage de la disponibilité d'un document)
+![Image console retour document](ImgEmprunt2.png)
